@@ -1,0 +1,53 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="card">
+                <div class="container text-center">
+
+                </div>
+
+                <div class="card-header bg-dark text-center text-white rounded">
+                    <h3 class="tituDonac">Donaciones</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form [formGroup]="formValue" >
+                        <div class="row">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <label for="">Nombres</label>
+                                    <input type="text" class="form-control" formControlName="nombres">
+                                </div>
+
+                                <div class="col-md-6" >
+                                    <label for="">Apellidos</label>
+                                    <input type="text" class="form-control" formControlName="apellidos">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="">Edad</label>
+                                    <input type="number" class="form-control" formControlName="edad">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="">Ciudad</label>
+                                    <input type="text" class="form-control" formControlName="ciudad">                                 
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="">Cantidad de dinero a donar</label>
+                                    <input type="number" class="form-control" formControlName="cantidad_dinero">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="enviar_formu(formValue)" type="submit" class="btn btn-outline-success my-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
